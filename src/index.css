@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    --font-outfit: "Outfit", sans-serif;
+    --color-primary: #6366f1;
+    --color-secondary: #0f172a;
+}
+
+:root {
+    font-family: var(--font-outfit);
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.glow-bg {
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+html, body {
+  overflow-x: hidden;
+}
