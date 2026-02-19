@@ -107,7 +107,7 @@ const Plans = () => {
                 {/* Grid on Desktop, Horizontal Scroll on Mobile */}
                 <div
                     ref={scrollContainerRef}
-                    className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 scrollbar-hide no-scrollbar"
+                    className="flex overflow-x-auto snap-x snap-mandatory gap-2 pb-12 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 scrollbar-hide no-scrollbar"
                     style={{
                         msOverflowStyle: 'none',
                         scrollbarWidth: 'none',
