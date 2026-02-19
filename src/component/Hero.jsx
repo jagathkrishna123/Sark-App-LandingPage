@@ -119,7 +119,7 @@ import { FaSignal, FaWifi, FaBatteryFull } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="relative pt-16 sm:pt-20 pb-16 sm:pb-24">
+        <section className="relative pt-16 sm:pt-14 pb-12 sm:pb-24">
             {/* Background Gradient Glow */}
             <div className="absolute top-1/2 left-[70%] -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[450px] lg:w-[600px] h-[300px] sm:h-[450px] lg:h-[600px] bg-gradient-to-r from-blue-100 via-indigo-50 to-purple-50 rounded-full blur-[80px] sm:blur-[90px] lg:blur-[100px] opacity-60 -z-10"></div>
 
@@ -155,13 +155,13 @@ const Hero = () => {
 
 
                     {/* iPhone Body */}
-                    <div className="relative z-10 mx-auto w-[240px] sm:w-[280px] lg:w-[360px] h-[480px] sm:h-[560px] lg:h-[650px] bg-black rounded-[45px] p-2 sm:p-3 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.35)] border-[6px] sm:border-[7px] lg:border-[8px] border-black">
+<div className="relative z-10 mx-auto w-[200px] sm:w-[240px] lg:w-[300px] h-[400px] sm:h-[480px] lg:h-[560px] bg-black rounded-[45px] p-1.5 sm:p-2 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.35)] border-[5px] sm:border-[6px] lg:border-[7px] border-black">
 
                         {/* Screen */}
                         <div className="w-full h-full bg-white rounded-[35px] overflow-hidden relative font-sans">
 
                             {/* Notch */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[110px] sm:w-[130px] h-[24px] bg-black rounded-b-2xl z-20"></div>
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90px] sm:w-[130px] sm:h-[24px] h-[15px] bg-black rounded-b-2xl z-20"></div>
 
                             {/* Status Bar */}
                             <div className="pt-6 sm:pt-7 px-4 sm:px-6 flex justify-between items-center text-[9px] sm:text-[10px] font-semibold">

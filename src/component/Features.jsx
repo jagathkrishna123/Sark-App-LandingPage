@@ -54,9 +54,9 @@ const Features = () => {
 font-extrabold text-[#111827] 
 leading-snug sm:leading-tight 
 mb-4 sm:mb-6">
-    Some features that set <br className="hidden sm:block" /> 
-    Sharko apart from others
-</h2>
+                        Some features that set <br className="hidden sm:block" />
+                        Sharko apart from others
+                    </h2>
                     <p className="text-gray-500 leading-relaxed">
                         SHARKO has some unique features & It lets you create landing pages or customize already existing templates easily as you like.
                     </p>

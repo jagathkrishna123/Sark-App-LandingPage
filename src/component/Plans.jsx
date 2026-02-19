@@ -95,7 +95,7 @@ const Plans = () => {
         <section className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-20">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight">
                         We offer great price <br /> plans for the application
                     </h2>
                     <p className="text-gray-400 text-sm leading-relaxed font-medium">
@@ -107,10 +107,11 @@ const Plans = () => {
                 {/* Grid on Desktop, Horizontal Scroll on Mobile */}
                 <div
                     ref={scrollContainerRef}
-                    className="flex overflow-x-auto snap-x snap-mandatory gap-2 pb-12 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 scrollbar-hide no-scrollbar"
+                    className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scroll-px-4 gap-2 pb-12 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 no-scrollbar"
                     style={{
                         msOverflowStyle: 'none',
                         scrollbarWidth: 'none',
+                        WebkitOverflowScrolling: 'touch'
                     }}
                 >
                     {pricingPlans.map((plan, index) => (
@@ -122,7 +123,14 @@ const Plans = () => {
                                 ref={(el) => (cardRefs.current[index] = el)}
                                 {...plan}
                                 isSelected={selectedIndex === index}
-                                onSelect={() => setSelectedIndex(index)}
+                                onSelect={() => {
+                                    setSelectedIndex(index);
+                                    cardRefs.current[index]?.scrollIntoView({
+                                        behavior: "smooth",
+                                        inline: "center",
+                                        block: "nearest"
+                                    });
+                                }}
                             />
                         </div>
                     ))}

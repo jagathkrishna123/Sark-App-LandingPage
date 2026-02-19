@@ -26,7 +26,13 @@ const Organize = () => {
                         {/* Purple Glow */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] h-[350px] sm:h-[550px] bg-purple-200/40 rounded-full blur-[100px] -z-10"></div>
 
-                        <div className="w-[280px] sm:w-[320px] h-[580px] sm:h-[650px] bg-black rounded-[45px] p-2.5 sm:p-3 shadow-2xl border-[6px] sm:border-[8px] border-black relative">
+<div className="w-[220px] sm:w-[260px] lg:w-[300px] 
+h-[460px] sm:h-[520px] lg:h-[580px] 
+bg-black rounded-[45px] 
+p-2 sm:p-2.5 
+shadow-2xl 
+border-[5px] sm:border-[6px] lg:border-[7px] 
+border-black relative">
                             {/* Notch */}
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[110px] sm:w-[130px] h-[24px] bg-black rounded-b-2xl z-20"></div>
 
@@ -120,7 +126,7 @@ const Organize = () => {
                 {/* Bottom Section: Text + Widget Stack */}
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-24 lg:gap-24 relative">
                     {/* Left: Text Content */}
-                    <div className="flex-1 max-w-xl text-center lg:text-left z-10 relative mt-12 sm:mt-0">
+                    <div className="flex-1 max-w-xl text-center lg:text-left z-10 relative mt-20 sm:mt-0">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#111827] mb-6 sm:mb-8 leading-[1.2]">
                             Get detailed time and <br className="hidden sm:block" /> data for every project
                         </h2>
