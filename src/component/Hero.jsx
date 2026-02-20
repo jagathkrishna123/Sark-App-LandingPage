@@ -155,7 +155,7 @@ const Hero = () => {
 
 
                     {/* iPhone Body */}
-<div className="relative z-10 mx-auto w-[200px] sm:w-[240px] lg:w-[300px] h-[400px] sm:h-[480px] lg:h-[560px] bg-black rounded-[45px] p-1.5 sm:p-2 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.35)] border-[5px] sm:border-[6px] lg:border-[7px] border-black">
+                    <div className="relative z-10 mx-auto w-[200px] sm:w-[240px] lg:w-[300px] h-[400px] sm:h-[480px] lg:h-[560px] bg-black rounded-[45px] p-1.5 sm:p-2 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.35)] border-[5px] sm:border-[6px] lg:border-[7px] border-black">
 
                         {/* Screen */}
                         <div className="w-full h-full bg-white rounded-[35px] overflow-hidden relative font-sans">

@@ -95,7 +95,7 @@ const Navbar = () => {
             )}
 
             {/* Sidebar */}
-            <div className={`fixed top-0 right-0 h-full w-72 bg-white/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+<div className={`fixed top-0 right-0 h-full w-72 bg-white/95 backdrop-blur-xl shadow-[0_20px_60px_rgba(0_0_0_0.15)] z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
     
     {/* Header */}
     <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
