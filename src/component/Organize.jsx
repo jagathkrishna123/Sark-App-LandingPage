@@ -117,7 +117,7 @@ border-black relative">
                             </p>
                         </div>
 
-                        <button className="w-full sm:w-auto px-8 py-4 bg-[#6366f1] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#a87532] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
                             Explore Now
                         </button>
                     </div>
@@ -141,7 +141,7 @@ border-black relative">
                             </p>
                         </div>
 
-                        <button className="w-full sm:w-auto px-8 py-4 bg-[#6366f1] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#a87532] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
                             Explore Now
                         </button>
                     </div>

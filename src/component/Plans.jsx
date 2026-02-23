@@ -92,7 +92,7 @@ const Plans = () => {
     }, []);
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 bg-white relative overflow-x-hidden overflow-y-visible">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight">
@@ -107,7 +107,7 @@ const Plans = () => {
                 {/* Grid on Desktop, Horizontal Scroll on Mobile */}
                 <div
                     ref={scrollContainerRef}
-                    className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scroll-px-4 gap-2 pb-12 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 no-scrollbar"
+                    className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scroll-px-4 gap-2 pt-6 pb-16 sm:pb-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 no-scrollbar"
                     style={{
                         msOverflowStyle: 'none',
                         scrollbarWidth: 'none',
@@ -115,10 +115,10 @@ const Plans = () => {
                     }}
                 >
                     {pricingPlans.map((plan, index) => (
-                        <div
-                            key={index}
-                            className="snap-center px-3  py-4"
-                        >
+                       <div
+  key={index}
+  className="snap-center px-3 py-10 overflow-visible"
+>
                             <PriceCard
                                 ref={(el) => (cardRefs.current[index] = el)}
                                 {...plan}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <section className="bg-[#7c3aed] py-20 px-6 overflow-hidden relative">
+        <section className="bg-[#a87532] py-20 px-6 overflow-hidden relative">
             <div className="max-w-7xl mx-auto flex flex-col items-center lg:items-start text-center lg:text-left relative z-10">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
                     Download our mobile app
