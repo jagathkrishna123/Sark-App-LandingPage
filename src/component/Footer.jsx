@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Logo and About */}
                     <div>
                         <div className="flex items-center gap-2 mb-6 sm:mb-8">
-                            <div className="w-9 h-9 bg-gradient-to-br from-[#a87532] to-[#a87532] rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
+                            <div className="w-9 h-9 bg-gradient-to-br from-[#f99147] to-[#f99147] rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
                                 <svg viewBox="0 0 24 24" className="w-5 h-5 text-white fill-current">
                                     <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
                                 </svg>

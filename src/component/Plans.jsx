@@ -115,10 +115,7 @@ const Plans = () => {
                     }}
                 >
                     {pricingPlans.map((plan, index) => (
-                       <div
-  key={index}
-  className="snap-center px-3 py-10 overflow-visible"
->
+                       <div key={index} className="snap-center px-3 py-10 overflow-visible">
                             <PriceCard
                                 ref={(el) => (cardRefs.current[index] = el)}
                                 {...plan}

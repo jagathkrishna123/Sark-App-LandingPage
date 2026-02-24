@@ -11,7 +11,7 @@ const PriceCard = React.forwardRef(
       w-[85%] xs:w-[75%] sm:w-full min-w-[240px] sm:min-w-0
       snap-center
       ${isSelected
-          ? 'bg-[#a87532] text-white border-[#8c5e24] shadow-[0_3px_8px_rgba(168,117,50,0.25),0_6px_18px_rgba(168,117,50,0.32)] scale-[1.02] sm:scale-[1.05] z-10'
+          ? 'bg-[#f99147] text-white border-[#c77f4c] shadow-[0_3px_8px_rgba(168,117,50,0.25),0_6px_18px_rgba(168,117,50,0.32)] scale-[1.02] sm:scale-[1.05] z-10'
           : 'bg-white text-gray-900 border-gray-100 shadow-sm hover:shadow-lg scale-100 opacity-90 sm:opacity-100'
         }`}
     >
@@ -65,7 +65,7 @@ const PriceCard = React.forwardRef(
       <button
         className={`w-full py-3 sm:py-4 rounded-xl font-bold text-xs sm:text-sm transition-all border
         ${isSelected
-            ? 'bg-white text-[#a87532] hover:bg-gray-50 shadow-lg'
+            ? 'bg-white text-[#f99147] hover:bg-gray-50 shadow-lg'
             : 'bg-white text-gray-900 border-gray-200 hover:bg-gray-50 hover:border-gray-300'
           }`}
       >

@@ -26,7 +26,7 @@ const Organize = () => {
                         {/* Purple Glow */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] h-[350px] sm:h-[550px] bg-purple-200/40 rounded-full blur-[100px] -z-10"></div>
 
-<div className="w-[220px] sm:w-[260px] lg:w-[300px] 
+                        <div className="w-[220px] sm:w-[260px] lg:w-[300px] 
 h-[460px] sm:h-[520px] lg:h-[580px] 
 bg-black rounded-[45px] 
 p-2 sm:p-2.5 
@@ -117,7 +117,7 @@ border-black relative">
                             </p>
                         </div>
 
-                        <button className="w-full sm:w-auto px-8 py-4 bg-[#a87532] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#f99147] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
                             Explore Now
                         </button>
                     </div>
@@ -141,7 +141,7 @@ border-black relative">
                             </p>
                         </div>
 
-                        <button className="w-full sm:w-auto px-8 py-4 bg-[#a87532] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#f99147] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
                             Explore Now
                         </button>
                     </div>
