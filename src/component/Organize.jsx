@@ -22,10 +22,14 @@ const Organize = () => {
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] h-[350px] sm:h-[550px] bg-purple-200/40 rounded-full blur-[100px] -z-10"></div>
 
                         <img
-                            src={Phone3}
-                            alt="Organize Insights Mockup"
-                            className="relative z-10 mx-auto w-[70vw] sm:w-[50vw] lg:w-[40vw] max-w-[520px] h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
-                        />
+  src={Phone3}
+  alt="Organize Insights Mockup"
+  className="relative z-10 mx-auto
+             w-[62vw] sm:w-[44vw] lg:w-[34vw]
+             max-w-[460px]
+             h-auto
+             drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
+/>
                     </div>
 
                     {/* Right: Text Content */}
