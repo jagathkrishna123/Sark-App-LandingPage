@@ -1,13 +1,8 @@
 import React from 'react';
-import { IoIosCheckmarkCircle } from "react-icons/io";
-import { FaSignal, FaWifi, FaBatteryFull } from "react-icons/fa";
+import Phone3 from "../assets/phone7.png"
 
 const Organize = () => {
-    const tasks = [
-        { id: 1, title: 'Design Homepage', date: 'Thu, Nov 23', status: 'not-completed', color: '#10b981' },
-        { id: 2, title: 'Sketsa Ilustrasi', date: 'Mon, Nov 15', status: 'completed', color: '#6366f1', avatar: 'https://xsgames.co/randomusers/assets/avatars/female/2.jpg' },
-        { id: 3, title: 'Onboarding Design', date: 'Wed, Nov 15', status: 'not-completed', color: '#f59e0b', avatar: 'https://xsgames.co/randomusers/assets/avatars/female/25.jpg' }
-    ];
+
 
     const taskProgressData = [
         { label: 'Copywriting', value: '2/8', width: '25%', color: 'bg-orange-400' },
@@ -26,79 +21,11 @@ const Organize = () => {
                         {/* Purple Glow */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] h-[350px] sm:h-[550px] bg-purple-200/40 rounded-full blur-[100px] -z-10"></div>
 
-                        <div className="w-[220px] sm:w-[260px] lg:w-[300px] 
-h-[460px] sm:h-[520px] lg:h-[580px] 
-bg-black rounded-[45px] 
-p-2 sm:p-2.5 
-shadow-2xl 
-border-[5px] sm:border-[6px] lg:border-[7px] 
-border-black relative">
-                            {/* Notch */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[110px] sm:w-[130px] h-[24px] bg-black rounded-b-2xl z-20"></div>
-
-                            <div className="w-full h-full bg-white rounded-[35px] overflow-hidden flex flex-col font-sans">
-                                {/* Status Bar */}
-                                <div className="pt-6 sm:pt-7 px-5 sm:px-7 flex justify-between items-center text-[10px] sm:text-[11px] font-bold">
-                                    <span>9:41</span>
-                                    <div className="flex items-center gap-1.5">
-                                        <FaSignal />
-                                        <FaWifi />
-                                        <FaBatteryFull className="text-[12px]" />
-                                    </div>
-                                </div>
-
-                                {/* Mockup Header */}
-                                <div className="px-5 sm:px-7 pt-5 sm:pt-6 flex justify-between items-center mb-6">
-                                    <button className="text-[11px] sm:text-[12px] font-bold text-gray-400 text-left">Back</button>
-                                    <h3 className="text-[15px] sm:text-[17px] font-bold text-gray-900">Insights</h3>
-                                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-gray-100 border-t-indigo-600 flex items-center justify-center">
-                                        <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
-                                    </div>
-                                </div>
-
-                                {/* Circular Chart */}
-                                <div className="flex flex-col items-center mb-8">
-                                    <div className="relative w-28 h-28 sm:w-36 sm:h-36">
-                                        <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90">
-                                            <circle cx="50" cy="50" r="45" fill="none" stroke="#f3f4f6" strokeWidth="8" />
-                                            <circle cx="50" cy="50" r="45" fill="none" stroke="#6366f1" strokeWidth="8" strokeDasharray="210 282.6" strokeLinecap="round" />
-                                        </svg>
-                                        <div className="absolute inset-0 flex flex-col items-center justify-center">
-                                            <span className="text-[14px] sm:text-[16px] font-extrabold text-gray-900">$32.01</span>
-                                            <span className="text-[8px] sm:text-[9px] text-gray-400 font-bold">75% spent</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Best Quality Header */}
-                                <div className="px-5 sm:px-7 mb-4">
-                                    <h4 className="text-[13px] sm:text-[14px] font-bold text-gray-900 text-left">Best Quality</h4>
-                                </div>
-
-                                {/* Tasks List */}
-                                <div className="px-5 sm:px-7 space-y-4">
-                                    <h5 className="text-[10px] sm:text-[11px] font-bold text-gray-400 uppercase tracking-widest text-left">Tasks</h5>
-                                    {tasks.map(task => (
-                                        <div key={task.id} className="flex items-center justify-between p-3 sm:p-4 rounded-2xl border border-gray-50 shadow-sm text-left">
-                                            <div className="flex items-center gap-3">
-                                                <div className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full border-2 flex items-center justify-center ${task.status === 'completed' ? 'bg-indigo-600 border-indigo-600' : 'border-gray-100'}`}>
-                                                    {task.status === 'completed' && <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full"></div>}
-                                                </div>
-                                                <div>
-                                                    <h6 className="text-[10px] sm:text-[12px] font-bold text-gray-900">{task.title}</h6>
-                                                    <p className="text-[8px] sm:text-[10px] text-gray-400 font-semibold">{task.date}</p>
-                                                </div>
-                                            </div>
-                                            {task.avatar && (
-                                                <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full overflow-hidden">
-                                                    <img src={task.avatar} alt="User" className="w-full h-full object-cover" />
-                                                </div>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
+                        <img
+                            src={Phone3}
+                            alt="Organize Insights Mockup"
+                            className="relative z-10 mx-auto w-[70vw] sm:w-[50vw] lg:w-[40vw] max-w-[520px] h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
+                        />
                     </div>
 
                     {/* Right: Text Content */}
