@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import PriceCard from "./PriceCard";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Plans = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -61,6 +65,9 @@ const Plans = () => {
         }
     ];
 
+    const sectionRef = useRef(null);
+    const headerRef = useRef(null);
+
     useEffect(() => {
         const observerOptions = {
             root: scrollContainerRef.current,
@@ -84,17 +91,36 @@ const Plans = () => {
             if (card) observer.observe(card);
         });
 
+        // GSAP Animation
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 75%",
+            }
+        });
+
+        tl.fromTo(headerRef.current.children,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power3.out" }
+        )
+            .fromTo(cardRefs.current,
+                { opacity: 0, y: 60, scale: 0.9, rotateY: 15 },
+                { opacity: 1, y: 0, scale: 1, rotateY: 0, duration: 1.2, stagger: 0.15, ease: "back.out(1.4)" },
+                "-=0.4"
+            );
+
         return () => {
             cardRefs.current.forEach((card) => {
                 if (card) observer.unobserve(card);
             });
+            ScrollTrigger.getAll().forEach(t => t.kill());
         };
     }, []);
 
     return (
-        <section className="py-24 bg-white relative overflow-x-hidden overflow-y-visible">
+        <section ref={sectionRef} className="py-24 bg-white relative overflow-x-hidden overflow-y-visible">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center max-w-2xl mx-auto mb-20">
+                <div ref={headerRef} className="text-center max-w-2xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight">
                         Simple & Transparent <br /> Pricing for Your Shop
                     </h2>

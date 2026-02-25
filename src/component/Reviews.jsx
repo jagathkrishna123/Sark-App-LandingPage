@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ReviewCard = ({ stars, text, author, role, avatar }) => (
-    <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
+    <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
         <div className="flex gap-1 mb-6">
             {[...Array(stars)].map((_, i) => (
                 <svg key={i} viewBox="0 0 24 24" className="w-5 h-5 text-yellow-400 fill-current">
@@ -10,11 +14,11 @@ const ReviewCard = ({ stars, text, author, role, avatar }) => (
             ))}
         </div>
 
-        <p className="text-gray-700 leading-relaxed font-medium text-[15px] mb-8 italic">
+        <p className="text-gray-700 leading-relaxed font-medium text-[15px] mb-8 italic flex-grow">
             "{text}"
         </p>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-auto">
             {avatar ? (
                 <div className="w-12 h-12 rounded-full overflow-hidden shadow-sm">
                     <img src={avatar} alt={author} className="w-full h-full object-cover" />
@@ -33,6 +37,45 @@ const ReviewCard = ({ stars, text, author, role, avatar }) => (
 );
 
 const Reviews = () => {
+    const sectionRef = useRef(null);
+    const headingRef = useRef(null);
+    const paraRef = useRef(null);
+    const cardsRef = useRef([]);
+
+    useEffect(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 75%",
+            }
+        });
+
+        tl.fromTo(
+            headingRef.current,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+        )
+            .fromTo(
+                paraRef.current,
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" },
+                "-=0.4"
+            )
+            .fromTo(
+                cardsRef.current,
+                { opacity: 0, y: 50, scale: 0.9 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    duration: 1,
+                    stagger: 0.2,
+                    ease: "back.out(1.2)"
+                },
+                "-=0.4"
+            );
+    }, []);
+
     const reviews = [
         {
             stars: 5,
@@ -56,13 +99,13 @@ const Reviews = () => {
     ];
 
     return (
-        <section className="py-24 bg-white relative">
+        <section ref={sectionRef} className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-20">
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight leading-tight">
+                    <h2 ref={headingRef} className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight leading-tight">
                         What our satisfied <br /> clients say about OLABIZ
                     </h2>
-                    <p className="text-gray-400 text-[15px] leading-relaxed font-medium">
+                    <p ref={paraRef} className="text-gray-400 text-[15px] leading-relaxed font-medium">
                         Helping restaurants, cafes, and shops modernize their ordering experience <br className="hidden md:block" />
                         with smart QR menus and seamless WhatsApp integration.
                     </p>
@@ -70,7 +113,9 @@ const Reviews = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {reviews.map((review, index) => (
-                        <ReviewCard key={index} {...review} />
+                        <div key={index} ref={el => cardsRef.current[index] = el}>
+                            <ReviewCard {...review} />
+                        </div>
                     ))}
                 </div>
             </div>
