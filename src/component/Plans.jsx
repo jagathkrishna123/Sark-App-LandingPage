@@ -8,55 +8,55 @@ const Plans = () => {
 
     const pricingPlans = [
         {
-            title: "Starter Plan",
-            price: "5",
-            description: "This package is suitable for teams 1-15 people",
-            buttonText: "Purchase Now",
+            title: "Essential",
+            price: "19",
+            description: "Perfect for small cafes and food stalls",
+            buttonText: "Start 7-Day Free Trial",
             features: [
-                "10 GB Disk Space",
-                "1 Year Support",
-                "500 Queries",
-                "Basic Statistics",
-                "Free Custom Domain"
+                "1 Dynamic QR Code",
+                "Instant WhatsApp Alerts",
+                "1 Menu Layout",
+                "Basic Order Tracking",
+                "Standard Email Support"
             ]
         },
         {
-            title: "Basic Plan",
-            price: "20",
-            description: "This package is suitable for teams 1-50 people",
-            buttonText: "Purchase Now",
+            title: "Professional",
+            price: "49",
+            description: "Best for growing restaurants & bistros",
+            buttonText: "Choose Professional",
             features: [
-                "500 GB Disk Space",
-                "5 Year Support",
-                "600 Queries",
-                "Basic Statistics",
-                "Free Custom Domain"
+                "3 Dynamic QR Codes",
+                "Advanced WhatsApp Details",
+                "All 3 Menu Layouts",
+                "Daily Sales Analytics",
+                "Priority Chat Support"
             ]
         },
         {
-            title: "Popular Plan",
-            price: "46",
-            description: "This package is suitable for teams 1-100 people",
-            buttonText: "Purchase Now",
+            title: "Business",
+            price: "99",
+            description: "For multi-location shops & chains",
+            buttonText: "Get OLABIZ Business",
             features: [
-                "800 GB Disk Space",
-                "10 Year Support",
-                "800 Queries",
-                "Fully Statistics",
-                "Free Custom Domain"
+                "Unlimited QR Codes",
+                "Multi-Branch Management",
+                "Custom Banner Ads",
+                "Monthly Performance Reports",
+                "Dedicated Account Manager"
             ]
         },
         {
-            title: "Premium Plan",
-            price: "90",
-            description: "This package is suitable for big team or company",
-            buttonText: "Purchase Now",
+            title: "Enterprise",
+            price: "199",
+            description: "Custom solutions for large franchises",
+            buttonText: "Contact Sales",
             features: [
-                "1000 GB Disk Space",
-                "Unlimited Support",
-                "Unlimited Queries",
-                "Fully Statistics",
-                "Free Custom Domain"
+                "White-label Branding",
+                "Custom API Integrations",
+                "POS System Sync",
+                "Unlimited Everything",
+                "24/7 Phone Support"
             ]
         }
     ];
@@ -96,11 +96,11 @@ const Plans = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight">
-                        We offer great price <br /> plans for the application
+                        Simple & Transparent <br /> Pricing for Your Shop
                     </h2>
                     <p className="text-gray-400 text-sm leading-relaxed font-medium">
-                        Objectively market-driven intellectual capital rather than covalent
-                        best practices facilitate strategic information before innovation.
+                        Choose the plan that fits your business needs. No hidden fees, <br className="hidden md:block" />
+                        just pure performance to help you manage orders effortlessly.
                     </p>
                 </div>
 
@@ -115,7 +115,7 @@ const Plans = () => {
                     }}
                 >
                     {pricingPlans.map((plan, index) => (
-                       <div key={index} className="snap-center px-3 py-10 overflow-visible">
+                        <div key={index} className="snap-center px-3 py-10 overflow-visible">
                             <PriceCard
                                 ref={(el) => (cardRefs.current[index] = el)}
                                 {...plan}

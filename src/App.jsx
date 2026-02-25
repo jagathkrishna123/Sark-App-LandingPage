@@ -11,23 +11,23 @@ import Lenis from "@studio-freight/lenis";
 
 
 const App = () => {
-    useEffect(() => {
+   useEffect(() => {
 
-    const lenis = new Lenis({
-      duration: 1.6,   // slower scroll
-      smoothWheel: true,
-      smoothTouch: true,
-      easing: (t) => 1 - Math.pow(1 - t, 4), // buttery easing curve
-    });
+  const lenis = new Lenis({
+    duration: 0.8,     // reduced from 1.6
+    smoothWheel: true,
+    smoothTouch: false,
+    easing: (t) => 1 - Math.pow(1 - t, 3), // less draggy
+  });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
+  }
 
-  }, []);
+  requestAnimationFrame(raf);
+
+}, []);
   return (
     <div className='min-h-screen bg-white'>
       <Navbar />
