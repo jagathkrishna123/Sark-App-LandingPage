@@ -15,32 +15,33 @@ const FeatureCard = ({ icon, title, description, iconBg }) => (
 const Features = () => {
     const features = [
         {
-            title: "Innovative Solution",
-            description: "Innovative Solutions require your operate & approach the problem in a specific way so that you can improvements to system.",
+            title: "QR Code Ordering System",
+            description: "Customers can scan your unique QR code to instantly access your digital menu. No app download required. Faster service, better customer experience.",
             iconBg: "bg-[#f99147]",
             icon: (
                 <svg viewBox="0 0 24 24" className="w-6 h-6 text-white fill-none stroke-current stroke-2">
-                    <path d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    <path d="M12 4v1m6 11h2m-6 0h-2v4m0-16v3m0 0h.01M4 12H2m10 0h2m-10 8h.01M16 20h.01m-4 0h.01m-4 0h.01m-4 0h.01M4 8h.01M4 16h.01M4 12h.01M20 8h.01M20 12h.01M20 16h.01M8 4h.01M16 4h.01" />
+                    <rect x="7" y="7" width="10" height="10" rx="1" />
                 </svg>
             )
         },
         {
-            title: "Fully functional",
-            description: "A work that can be considered to be with practical use, such as software and apps having no point of view and non-fiction.",
-            iconBg: "bg-[#f99147]",
+            title: "Instant WhatsApp Order Notifications",
+            description: "Receive real-time order details directly on your WhatsApp. Get customer name, items ordered, and special instructions instantly.",
+            iconBg: "bg-[#25D366]",
             icon: (
-                <svg viewBox="0 0 24 24" className="w-6 h-6 text-white fill-none stroke-current stroke-2">
-                    <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                <svg viewBox="0 0 24 24" className="w-6 h-6 text-white fill-current">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.438 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.435 5.704 1.435h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
             )
         },
         {
-            title: "Secure Database",
-            description: "Your website data is always secure & protected with automatic daily backups and easily restore data with 1 click.",
+            title: "Multiple Layouts & Banner Ads",
+            description: "Choose from 3 beautiful menu layouts that match your brand. Promote offers and announcements using custom banner advertisements inside your menu.",
             iconBg: "bg-[#f99147]",
             icon: (
                 <svg viewBox="0 0 24 24" className="w-6 h-6 text-white fill-none stroke-current stroke-2">
-                    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
             )
         }

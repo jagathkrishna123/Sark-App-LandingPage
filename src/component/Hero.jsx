@@ -36,7 +36,7 @@ const Hero = () => {
                 {/* Right Mobile Mockup................................... */}
                 <div className="relative flex justify-center">
                     {/* Subtle Glow behind phone */}
-                    {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] lg:w-[500px] h-[350px] sm:h-[450px] lg:h-[500px] bg-gradient-to-tr from-[#f99147]/70 via-[#c9964a]/60 to-[#8c5e24]/70 rounded-full blur-[90px] opacity-60 z-0 drop-shadow-[0_0_24px_#f99147] sm:drop-shadow-[0_0_32px_#f99147] lg:drop-shadow-[0_0_40px_#f99147]"></div> */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[450px] lg:w-[500px] h-[350px] sm:h-[450px] lg:h-[500px] bg-gradient-to-tr from-[#f99147]/70 via-[#c9964a]/60 to-[#8c5e24]/70 rounded-full blur-[90px] opacity-60 z-0 drop-shadow-[0_0_24px_#f99147] sm:drop-shadow-[0_0_32px_#f99147] lg:drop-shadow-[0_0_40px_#f99147]"></div>
 
                     {/* iPhone Body */}
                  <img
