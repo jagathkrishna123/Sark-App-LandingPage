@@ -36,22 +36,22 @@ const Reviews = () => {
     const reviews = [
         {
             stars: 5,
-            text: "I'm enjoying it!! I like working for Landing. I've been cleaning for a while so the work is easy and straightforward imo. I really don't have any issues with SHARKO.",
+            text: "Setting up our digital menu with you app was incredibly fast. Our customers love scanning the QR code and ordering without downloading any app. It has completely transformed our cafe's efficiency!",
             author: "Leslie Alexander",
-            role: "Founder",
+            role: "Cafe Owner",
         },
         {
             stars: 5,
-            text: "Great flexibility! I really like the flexibility of the Apps. The higher the ratings we have the better chance. It's a good work environment they answer in a timely.",
+            text: "The WhatsApp order notifications are a game-changer! We receive complete order details instantly. It's so much simpler than managing a complex dashboard. Highly recommended for any restaurant.",
             author: "Jacob Jones",
-            role: "Co-Founder",
+            role: "Bistro Manager",
             avatar: "https://xsgames.co/randomusers/assets/avatars/male/74.jpg"
         },
         {
             stars: 5,
-            text: "I love SHARKO. The market is slow in some locations and booming in the big cities.It is very professional and made you feel appreciated for the work you were doing.",
+            text: "I was amazed by the beautiful menu layouts. We were able to customize the design to match our bakery's brand perfectly. The banner ads feature also helped us increase our weekend sales by 20%.",
             author: "Jenny Wilson",
-            role: "Chief Marketing Officer",
+            role: "Bakery Owner",
         }
     ];
 
@@ -63,8 +63,8 @@ const Reviews = () => {
                         What our satisfied <br /> clients say about Sharko
                     </h2>
                     <p className="text-gray-400 text-[15px] leading-relaxed font-medium">
-                        Landing is a network of fully furnished apartments across the whole <br className="hidden md:block" />
-                        country, so no matter where you land, it'll always feel like home.
+                        Helping restaurants, cafes, and shops modernize their ordering experience <br className="hidden md:block" />
+                        with smart QR menus and seamless WhatsApp integration.
                     </p>
                 </div>
 

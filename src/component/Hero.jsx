@@ -13,11 +13,10 @@ const Hero = () => {
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1f2937] leading-[1.2] lg:leading-[1.3] mb-6">
-                        Just one click away to create a modern app landing page
+                        Turn Your Shop Into a Smart QR Digital Menu
                     </h1>
                     <p className="text-base sm:text-lg text-gray-500 mb-8 sm:mb-10 max-w-lg leading-relaxed mx-auto lg:mx-0">
-                        App landing page is an important part of mobile app development and app marketing strategy use your mobile device to quickly create a landing page.
-                    </p>
+Create a modern digital menu for your shop or restaurant. Customers simply scan a QR code to view items and place orders. Get instant order notifications directly on WhatsApp and manage everything effortlessly.                    </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <button className="w-full sm:w-auto bg-[#f99147] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold shadow-lg shadow-purple-200 hover:bg-[#a88f32] transition-all">
                             Let's get started

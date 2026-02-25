@@ -43,7 +43,7 @@ const Organize = () => {
                             </p>
                         </div>
 
-                        <button className="w-full sm:w-auto px-8 py-4 bg-[#f99147] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#4f46e5] transition-all">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#f99147] text-white rounded-md font-bold text-sm shadow-[0_4px_14px_rgba(99,102,241,0.39)] hover:bg-[#f97447] transition-all">
                             Explore Features
                         </button>
                     </div>
