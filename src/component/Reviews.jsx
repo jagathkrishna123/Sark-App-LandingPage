@@ -60,7 +60,7 @@ const Reviews = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mb-6 outfit-font tracking-tight leading-tight">
-                        What our satisfied <br /> clients say about Sharko
+                        What our satisfied <br /> clients say about OLABIZ
                     </h2>
                     <p className="text-gray-400 text-[15px] leading-relaxed font-medium">
                         Helping restaurants, cafes, and shops modernize their ordering experience <br className="hidden md:block" />

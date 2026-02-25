@@ -1,7 +1,8 @@
 
 
 import React from 'react';
-import { FaXTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa6";
+import LOGO from "../assets/weblogo.png"
+
 
 const Footer = () => {
     return (
@@ -14,12 +15,8 @@ const Footer = () => {
                     {/* Logo and About */}
                     <div>
                         <div className="flex items-center gap-2 mb-6 sm:mb-8">
-                            <div className="w-9 h-9 bg-gradient-to-br from-[#f99147] to-[#f99147] rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
-                                <svg viewBox="0 0 24 24" className="w-5 h-5 text-white fill-current">
-                                    <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
-                                </svg>
-                            </div>
-                            <span className="text-2xl font-bold text-gray-700 tracking-tight">Sark</span>
+                            <img src={LOGO} alt="OLABIZ Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+                            <span className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight uppercase">OLABIZ</span>
                         </div>
 
                         <div className="flex flex-col gap-3 sm:gap-4 text-gray-500 font-semibold text-[15px]">
@@ -67,12 +64,6 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between pt-8 sm:pt-10 border-t border-gray-100 gap-6 sm:gap-8">
 
-                    <div className="flex items-center gap-6 text-gray-600 text-lg">
-                        <FaXTwitter className="hover:text-indigo-600 cursor-pointer" />
-                        <FaFacebookF className="hover:text-indigo-600 cursor-pointer" />
-                        <FaInstagram className="hover:text-indigo-600 cursor-pointer" />
-                        <FaGithub className="hover:text-indigo-600 cursor-pointer" />
-                    </div>
 
                     <div className="flex flex-wrap items-center gap-6 sm:gap-8 text-[13px] font-bold text-gray-500">
                         <a href="#">Privacy Policy</a>

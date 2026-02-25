@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
+import LOGO from "../assets/weblogo.png"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +13,8 @@ const Navbar = () => {
             <nav className="flex items-center justify-between px-4 sm:px-6 py-4 max-w-7xl mx-auto w-full relative z-50">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-br from-[#f99147] to-[#f99147] rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
-                        <svg viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5 text-white fill-current">
-                            <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
-                        </svg>
-                    </div>
-                    <span className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">Sark</span>
+                    <img src={LOGO} alt="OLABIZ Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+                    <span className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight uppercase">OLABIZ</span>
                 </div>
 
                 {/* Nav Links */}
@@ -62,10 +59,8 @@ const Navbar = () => {
                 {/* Header */}
                 <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
                     <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 bg-gradient-to-br from-[#f99147] to-[#f99147] rounded-lg flex items-center justify-center shadow-md">
-                            <span className="text-white font-bold text-sm">S</span>
-                        </div>
-                        <span className="text-lg font-semibold text-gray-900">Sark</span>
+                        <img src={LOGO} alt="OLABIZ Logo" className="w-9 h-9 object-contain" />
+                        <span className="text-lg font-bold text-gray-900 uppercase">OLABIZ</span>
                     </div>
 
                     <button

@@ -16,28 +16,28 @@ const FeatureCard = ({ icon, title, description, iconBg }) => (
 
 const Features = () => {
     const features = [
-  {
-    title: "QR Code Ordering System",
-    description:
-      "Customers can scan your unique QR code to instantly access your digital menu. No app download required. Faster service, better customer experience.",
-    iconBg: "bg-[#f99147]",
-    icon: <MdQrCodeScanner className="w-6 h-6 text-white" />,
-  },
-  {
-    title: "Instant WhatsApp Order Notifications",
-    description:
-      "Receive real-time order details directly on your WhatsApp. Get customer name, items ordered, and special instructions instantly.",
-    iconBg: "bg-[#25D366]",
-    icon: <FaWhatsapp className="w-6 h-6 text-white" />,
-  },
-  {
-    title: "Multiple Layouts & Banner Ads",
-    description:
-      "Choose from 3 beautiful menu layouts that match your brand. Promote offers and announcements using custom banner advertisements inside your menu.",
-    iconBg: "bg-[#f99147]",
-    icon: <HiOutlineViewGridAdd className="w-6 h-6 text-white" />,
-  },
-];
+        {
+            title: "QR Code Ordering System",
+            description:
+                "Customers can scan your unique QR code to instantly access your digital menu. No app download required. Faster service, better customer experience.",
+            iconBg: "bg-[#f99147]",
+            icon: <MdQrCodeScanner className="w-6 h-6 text-white" />,
+        },
+        {
+            title: "Instant WhatsApp Order Notifications",
+            description:
+                "Receive real-time order details directly on your WhatsApp. Get customer name, items ordered, and special instructions instantly.",
+            iconBg: "bg-[#25D366]",
+            icon: <FaWhatsapp className="w-6 h-6 text-white" />,
+        },
+        {
+            title: "Multiple Layouts & Banner Ads",
+            description:
+                "Choose from 3 beautiful menu layouts that match your brand. Promote offers and announcements using custom banner advertisements inside your menu.",
+            iconBg: "bg-[#f99147]",
+            icon: <HiOutlineViewGridAdd className="w-6 h-6 text-white" />,
+        },
+    ];
 
     return (
         <section className="py-24 bg-gray-50/50">
@@ -48,7 +48,7 @@ const Features = () => {
                         for Modern Shops
                     </h2>
                     <p className="text-gray-500 leading-relaxed">
-                        SHARKO has some unique features & It lets you create landing pages or customize already existing templates easily as you like.
+                        OLABIZ has some unique features & It lets you create landing pages or customize already existing templates easily as you like.
                     </p>
                 </div>
 
